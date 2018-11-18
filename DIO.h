@@ -1,6 +1,8 @@
 #ifndef DIO_H_
 #define DIO_H_
 
+#include "Std_Types.h" 
+
 /*Test Section*/
 #define SETPORT(PORT,VALUE)	PORT = VALUE ;
 #define CLEARPORT(PORT)		PORT = 0  ;
@@ -23,7 +25,9 @@
 #define portD  *((volatile uint8_t*)(0x32))
 #define DDRD   *((volatile uint8_t*)(0x31))
 #define PIND   *((volatile uint8_t*)(0x30))
+
 /*Configuration Section */
+
 #define PORTA_INIT  0xff;
 #define PORTB_INIT  0xff;
 #define PORTC_INIT  0xff;
@@ -32,6 +36,7 @@
 #define PORTB_VALUE  0xff;
 #define PORTC_VALUE  0xff;
 #define PORTD_VALUE  0xff;
+
 /*prototype section */
 void DIO_vidInit(void);
 void DIO_vidsetPortdirecton(uint8_t uint8_port,uint8_t uint8_direction);

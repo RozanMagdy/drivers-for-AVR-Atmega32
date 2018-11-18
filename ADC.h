@@ -8,10 +8,7 @@
 #ifndef ADC_H_
 #define ADC_H_
 
-/*type definetion */
-
-typedef unsigned char u8;
-typedef unsigned short int u16;
+#include "Std_Types.h"
 
 /*privet section */
 

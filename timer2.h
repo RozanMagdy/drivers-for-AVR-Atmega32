@@ -7,10 +7,8 @@
 
 #ifndef TIMER2_H_
 #define TIMER2_H_
-/*type definetion */
 
-typedef unsigned char u8;
-typedef unsigned short int u16;
+#include "Std_Types.h"
 
 /*privet section */
 
